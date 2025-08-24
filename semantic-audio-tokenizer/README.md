@@ -42,3 +42,8 @@ python semantic-audio-tokenizer/overview_and_setup/run_codec.py \
 Large model checkpoints (>2GB) are not in this repo.
 They are automatically downloaded from Hugging Face on first run (or can be manually placed in your Hugging Face cache).
 ```
+### Evaluation metric
+```bash
+!pip install jiwer
+python3 Calculate_evaluation_metrics.py
+```
