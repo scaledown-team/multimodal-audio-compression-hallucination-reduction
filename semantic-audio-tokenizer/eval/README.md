@@ -30,11 +30,13 @@ pip install -r semantic-audio-tokenizer/requirements_avhbench.txt
 4. If dataset only has embedded audio in mp4
 Run with --use_ffmpeg_audio_extract to auto-extract mono WAV per video using ffmpeg.
 
-
 EXAMPLE Run:
     export OPENAI_API_KEY=sk-your-key-here
 
-    python semantic-audio-tokenizer/eval/eval_avhbench_pandagpt.py \
+
+(from the parent directory, workspace folder is the parent of eval/)
+
+    python -m eval.eval_avhbench_pandagpt \
     --qa_json /path/to/avhbench_QA.json \
     --cap_json /path/to/avhbench_captions.json \
     --out_dir semantic-audio-tokenizer/results/avhbench \
@@ -134,3 +136,4 @@ Tips:
     CIDEr is None — ensure pycocoevalcap and pycocotools are installed.
     
     OpenAI errors — check OPENAI_API_KEY, reduce concurrency/batch size on 429s.`
+
