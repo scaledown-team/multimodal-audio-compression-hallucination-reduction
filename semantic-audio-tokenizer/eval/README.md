@@ -1,7 +1,6 @@
 # AVHBench Evaluation (PandaGPT Baseline)
 
 This folder contains a **baseline-only** AVHBench evaluation using the public **PandaGPT**.  
-SemantiCodec tokens and GAVIE judge are wired as **placeholders** (ready to be enabled later).
 
 ## Setup
 
